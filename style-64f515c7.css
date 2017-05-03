@@ -19,9 +19,10 @@
   font-size: 16px;
   color: #b1b1b1;
   border: 1px solid #dadada;
-  text-decoration: none; }
+  text-decoration: none;
+  background-color: black; }
   ._2RaQ4:active, ._2RaQ4.tGV-t {
-    color: #000;
+    color: #fff;
     text-decoration: underline;
     box-shadow: 0 1px 4px 1px rgba(0, 0, 0, 0.16); }
 
@@ -183,4 +184,4 @@ main {
     height: 400px;
     flex: 1; }
 
-/*# sourceMappingURL=style-f0ae1191.css.map*/
+/*# sourceMappingURL=style-64f515c7.css.map*/
