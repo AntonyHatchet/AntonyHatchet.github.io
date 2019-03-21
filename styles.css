@@ -1,9 +1,9 @@
-.characters_list {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  max-width: 1260px;
-  min-height: 40vh; }
+.episodes.card {
+  height: auto;
+  width: 100%; }
+  .episodes.card .card_header {
+    padding: 0 1rem;
+    height: auto; }
 .location.card {
   max-height: 400px;
   width: 400px;
@@ -23,18 +23,20 @@
   margin-bottom: 0.65rem;
   border-bottom: 1px #fff; }
   .card .card_header {
-    height: 300px; }
+    height: 300px;
+    position: relative; }
     .card .card_header .card_header_cover_image {
       position: relative;
-      margin-bottom: -81px; }
+      width: 300px; }
     .card .card_header .card_header_text_block {
-      position: relative;
+      position: absolute;
       background-color: rgba(0, 0, 0, 0.705);
       color: #d6d6d6;
-      padding: 0.625rem; }
+      padding: 0.625rem;
+      width: 100%;
+      bottom: 0; }
       .card .card_header .card_header_text_block h2 {
-        margin-top: 0;
-        font-size: 1.3rem; }
+        margin-top: 0; }
   .card .card_body {
     height: 100%;
     color: #ff9800;
@@ -43,6 +45,10 @@
     .card .card_body .card_body_element_active {
       cursor: pointer;
       position: relative; }
+      .card .card_body .card_body_element_active .card_body_element:first-child {
+        border-bottom: 2px solid rgba(129, 126, 126, 0.233); }
+      .card .card_body .card_body_element_active:last-child .card_body_element:first-child {
+        border: none; }
       .card .card_body .card_body_element_active:hover {
         color: #8a6ef1; }
     .card .card_body .card_body_element {
@@ -51,7 +57,7 @@
       justify-content: space-between;
       margin-bottom: 0.7rem;
       border-bottom: 2px solid rgba(129, 126, 126, 0.233);
-      padding: 0.75rem 0px 0.375rem; }
+      padding: 0 0 0.375rem; }
       .card .card_body .card_body_element:last-child {
         border: none; }
       .card .card_body .card_body_element span {
@@ -65,6 +71,12 @@
         .card .card_body .card_body_element span:nth-child(2) {
           width: 100%;
           text-align: right; }
+.characters_list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1260px;
+  min-height: 40vh; }
 section {
   display: flex;
   -webkit-box-pack: center;
